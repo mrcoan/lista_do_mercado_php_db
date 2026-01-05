@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: .3s;
+    font-family: "Montserrat", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
+
+hr {
+    width: 50%;
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+}
+
+small {
+    display: block;
+}
+
+form {
+    margin: 10px 0;
+}
+
+input,
+label,
+textarea {
+    display: block;
+}
+
+input,
+select,
+textarea {
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 50%;
+}
+
+button {
+    font-size: inherit;
+    background: inherit;
+    border: none;
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+header img {
+    height: 50px;
+}
+
+#navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#navbar a {
+    margin: 0 10px;
+}
+
+#navbar img {
+    height: 30px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.card-item {
+    height: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+}
+
+.acoes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.acoes a {
+    margin-right: 10px;
+}
+
+.acoes img {
+    width: 20px;
+}
+
+.btn {
+    padding: 10px;
+    color: #fff;
+}
+
+.btn-azul {
+    background-color: #5b4dd4;
+}
+
+.btn-preto {
+    background-color: #161616;
+}
+
+@media (max-width: 800px) {
+
+    .container {
+        padding: 0 20px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    input,
+    select,
+    textarea {
+        width: 75%;
+    }
+}
+
+@media (max-width: 400px) {
+
+    header h1 {
+        display: none;
+    }
+
+    .container {
+        padding: 0 20px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    input,
+    select,
+    textarea {
+        width: 100%;
+    }
+}
